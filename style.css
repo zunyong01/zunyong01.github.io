@@ -1,0 +1,207 @@
+/* nav 링크 효과 */
+.nav-links a {
+  position: relative;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #444; /* 차콜색 계열 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #444; /* hover 시 차콜색 */
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* h1 내 링크 효과 (import junyong as my) */
+header h1 a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+header h1 a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #444; /* 차콜색 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+header h1 a:hover {
+  color: #444;
+}
+
+header h1 a:hover::after {
+  transform: scaleX(1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* 중앙 정렬용 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+
+.main-text {
+  max-width: 50%;
+}
+
+.main-img img {
+  max-width: 350px;
+  border-radius: 8px;
+}
+
+.project-container {
+  padding: 3rem 2rem;
+}
+
+.project-box {
+  display: flex;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project-image img {
+  max-width: 250px; /* 원하는 최대 너비 설정 */
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* 필요 시 비율 유지하며 자르기 */
+  border-radius: 6px; /* 모서리 부드럽게 (선택사항) */
+}
+
+.project-content {
+  flex: 1;
+}
+
+.work {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.2rem;
+}
+
+.summary {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #eee;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.project-links a:hover {
+  background-color: #d0d0d0;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 2rem 0; /* 좌우 여백 제거 */
+  background-color: #fdfdfd;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; /* 필요 시 조정 */
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 260px;
+  text-align: left;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 260px;
+  text-align: right;
+}
+
+.address-block {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.4;
+  text-align: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3366cc;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
