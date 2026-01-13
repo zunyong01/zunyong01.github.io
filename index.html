@@ -43,17 +43,15 @@
 
         <h3 style="margin-top: 2rem;"># <code>I’m Interested in</code></h3>
         <ul>
-          <li><strong>Data-driven decision making</strong></li>
-          <li><strong>R&D Strategy Roadmapping<br>(patent, account, finance, ESG report)</strong></li>
-          <li><strong>Technology Forecasting</strong></li>
-          <li><strong>Technology Opportunity</strong></li>
-          <li><strong>Discrete Choice Model</strong></li>
-          <li><strong>Contingent Valuation Method</strong></li>
+          <li><strong>Data-driven decision making</strong></li><br>
+          <li>R&D Strategy Roadmapping<br>(patent, account, finance, ESG report)</li>
+          <li>Technology Management</li>
+          <li>Technology Forecasting</li>
+          <li>Technology Opportunity</li>
+          <li>Discrete Choice Experiment</li>
+          <li>Contingent Valuation</li>
         </ul>
 
-        <p style="margin-top: 1.5rem;">
-          <strong>Research Interests:</strong> Data driven Technology Opportunity Discovery
-        </p>
 
         <p style="margin-top: 3rem;">
           ⚽ I enjoy watching football matches,especially those of <br> 
@@ -74,8 +72,17 @@
       </div>
 
       <div class="main-img">
-        <img src="main.jpeg" alt="main image" width="300px" />
+        <div class="image-slider">
+          <button class="slide-btn prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="main.jpeg" alt="profile 1" />
+          <img src="main2.PNG" alt="profile 2" />
+        </div>
+
+        <button class="slide-btn next">&#10095;</button>
       </div>
+</div>
     </section>
 
 <footer>
@@ -128,5 +135,23 @@
 
   </div>
 
+
+<script>
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const prevBtn = document.querySelector('.slide-btn.prev');
+  const nextBtn = document.querySelector('.slide-btn.next');
+
+  let index = 0;
+
+  function showSlide(i) {
+    index = (i + images.length) % images.length;
+    slides.style.transform = `translateX(${-300 * index}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => showSlide(index + 1));
+  prevBtn.addEventListener('click', () => showSlide(index - 1));
+</script>
+  
 </body>
 </html>

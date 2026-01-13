@@ -1,3 +1,47 @@
+.image-slider {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slides img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* 버튼 */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slide-btn.prev {
+  left: 6px;
+}
+
+.slide-btn.next {
+  right: 6px;
+}
+
+.slide-btn:hover {
+  background: rgba(0,0,0,0.6);
+}
+
 /* nav 링크 효과 */
 .nav-links a {
   position: relative;
@@ -60,7 +104,12 @@ header h1 a:hover::after {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:
+    "Times New Roman",        /* 영어 */
+    "Noto Serif KR",          /* 한국어 (세리프, 논문 느낌) */
+    "Apple SD Gothic Neo",    /* macOS */
+    "Malgun Gothic",          /* Windows */
+    serif;
   background-color: #fdfdfd;
   color: #333;
 }
@@ -109,6 +158,8 @@ header {
 
 .project-box {
   display: flex;
+  flex-direction: column;   /* 🔥 이 줄이 핵심 */
+  align-items: center;      /* 이미지/콘텐츠 가운데 */
   margin-bottom: 3rem;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 2rem;
@@ -122,15 +173,23 @@ header {
 }
 
 .project-image img {
-  max-width: 250px; /* 원하는 최대 너비 설정 */
+  max-width: 400px;   /* 논문/프로젝트 스크린샷에 적합 */
   width: 100%;
   height: auto;
-  object-fit: cover; /* 필요 시 비율 유지하며 자르기 */
-  border-radius: 6px; /* 모서리 부드럽게 (선택사항) */
+  border-radius: 8px;
 }
 
 .project-content {
-  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.project-content ul,
+.project-content li {
+  list-style-position: inside; /* 불릿도 중앙 기준 */
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .work {
