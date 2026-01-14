@@ -106,7 +106,6 @@ body {
   margin: 0;
   font-family:
     "Times New Roman",        /* 영어 */
-    "Noto Serif KR",          /* 한국어 (세리프, 논문 느낌) */
     "Apple SD Gothic Neo",    /* macOS */
     "Malgun Gothic",          /* Windows */
     serif;
