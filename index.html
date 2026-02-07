@@ -31,8 +31,7 @@
           </a>
         </h1>
       <nav class="nav-links">
-        <a href="academic.html">my.Academic</a>
-        <a href="project.html">my.Projects</a>
+        <a href="academic.html">my.journey</a>
       </nav>
     </header>
 
@@ -137,6 +136,7 @@
 
 
 <script>
+  const slider = document.querySelector('.image-slider');
   const slides = document.querySelector('.slides');
   const images = document.querySelectorAll('.slides img');
   const prevBtn = document.querySelector('.slide-btn.prev');
@@ -144,13 +144,23 @@
 
   let index = 0;
 
+  function slideWidth() {
+    return slider.clientWidth; // 현재 화면에서 실제 슬라이더 폭
+  }
+
   function showSlide(i) {
     index = (i + images.length) % images.length;
-    slides.style.transform = `translateX(${-300 * index}px)`;
+    slides.style.transform = `translateX(${-slideWidth() * index}px)`;
   }
 
   nextBtn.addEventListener('click', () => showSlide(index + 1));
   prevBtn.addEventListener('click', () => showSlide(index - 1));
+
+  // 화면 리사이즈 시에도 끊김 방지
+  window.addEventListener('resize', () => showSlide(index));
+
+  // 초기 정렬
+  showSlide(0);
 </script>
   
 </body>
