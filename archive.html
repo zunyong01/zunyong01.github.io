@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>
+        <a href="index.html" style="text-decoration:none; color:inherit;">
+          <code style="background-color:#1e1e1e; padding:0.3em 0.6em; border-radius:4px; display:inline-block;">
+            <span style="color:#f92672;">import</span>
+            <span style="color:#a6e22e;">junyong</span>
+            <span style="color:#f92672;">as</span>
+            <span style="color:#e6db74;">my</span>
+          </code>
+        </a>
+      </h1>
+
+      <nav class="nav-links">
+        <a href="academic.html">my.journey</a>
+        <a href="archive.html">my.archive</a>
+      </nav>
+    </header>
+
+    <main class="archive">
+
+      <div class="archive-head">
+        <h2 class="archive-title">Memories</h2>
+
+        <!-- instagram-like tabs -->
+        <div class="archive-tabs" role="tablist" aria-label="Archive tabs">
+          <button class="arc-tab is-active" type="button" data-tab="photos" role="tab" aria-selected="true">
+            ☷ Photos
+          </button>
+          <button class="arc-tab" type="button" data-tab="posts" role="tab" aria-selected="false">
+            🔖 Posts
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== Photos ===== -->
+      <section class="arc-panel is-active" id="tab-photos" data-panel="photos" role="tabpanel">
+        <div class="ig-grid">
+          <!-- item -->
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p1.jpeg" alt="photo 1" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2024-07-05</time>
+              <p>KOSIME 2024 Summer Conference<br>My first presentation!</p>
+            </div>
+          </div>
+          
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p2.jpeg" alt="photo 2" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2024-08-05</time>
+              <p>Kyung Hee University & Osaka University<br>Thanks for inviting!</p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p4.jpeg" alt="photo 4" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2024-11-18</time>
+              <p>2024 Campus Patent Universiade<br>I am honored to have received the Ministry's Award </p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p3.jpeg" alt="photo 3" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2024-11-29</time>
+              <p>KSOI 2024 Autumn Conference<br>My second presentation!</p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p5.jpeg" alt="photo 5" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2025-05-23</time>
+              <p>KSOI 2025 Spring Conference<br>I am honored to have received the Best Presentation Award! </p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p6.jpeg" alt="photo 6" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2025-07-03</time>
+              <p>KOSIME 2025 Summer Conference<br>I am honored to have received the Ministry's Award </p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p7.jpeg" alt="photo 7" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2025-10-26</time>
+              <p>Informs Annual Meeting 2025 at Atlanta US<br>My first International Conference!</p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p8.jpeg" alt="photo 8" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2025-11-07</time>
+              <p>13th Korea Media Panel Conference<br>I am honored to have received the Best Paper Award</p>
+            </div>
+          </div>
+
+          <div class="ig-item">
+            <div class="ig-thumb">
+              <img src="assets/archive/photos/p9.jpeg" alt="photo 9" loading="lazy">
+            </div>
+            <div class="ig-meta">
+              <time>2025-11-18</time>
+              <p>2025 Campus Patent Universiade<br>I am honored to have received the KIPA President's Award </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== Posts (글 중심 카드) ===== -->
+      <section class="arc-panel" id="tab-posts" data-panel="posts" role="tabpanel" hidden>
+        <div class="post-grid">
+
+          <article class="post-card">
+            <div class="post-top">
+              <span class="post-date">2026-01-01</span>
+              <span class="post-pill">???</span>
+            </div>
+            <h3 class="post-title">To be Continue</h3>
+            <p class="post-desc">
+              공유할 만한 내용을 공유하겠습니다
+            </p>
+            <div class="post-links">
+              <a href="assets/archive/files/finds_palette.pdf" target="_blank" rel="noopener">📄 File</a>
+              <a href="https://example.com" target="_blank" rel="noopener">🔗 Link</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-top">
+              <span class="post-date">2026-01-01</span>
+              <span class="post-pill">!!!</span>
+            </div>
+            <h3 class="post-title">Hello</h3>
+            <p class="post-desc">
+              공유할 만한 내용을 공유하겠습니다
+            </p>
+            <div class="post-links">
+              <a href="assets/archive/files/informs_notes.pdf" target="_blank" rel="noopener">📄 PDF</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+
+        <div class="footer-left">
+          <div class="contact">
+            <strong>Contact here</strong><br>
+            <a href="mailto:gunnercoyg@khu.ac.kr">gunnercoyg@khu.ac.kr</a><br>
+            <a href="https://tdilab.khu.ac.kr/">T&DI Lab at KyungHee University</a>
+          </div>
+
+          <div class="social" style="margin-top: 1rem;">
+            <strong>Follow Me</strong><br>
+            <a href="https://github.com/zunyong01" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a><br>
+            <a href="https://www.instagram.com/zunyonglee" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2381024387395!2d127.07824237644646!3d37.2464023719996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44df25a102c3%3A0x22dcda61fb710fef!2z6rK96riw64-EIOygnOq1rCDslYTrjIDrrLjroZwg6rK96riw64-EIOq1rOyCsOuemOybkCDspJHrj4Trs7jsnpAg6rSA7Yq47J247Yq567mE!5e0!3m2!1sko!2skr!4v1719226314277!5m2!1sko!2skr"
+            width="260"
+            height="160"
+            style="border:0; border-radius: 6px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <div class="address-block">
+            <p>Room 361 @ Engineering Building,<br>
+            Kyung Hee University Global Campus</p>
+            <p>1732, Deogyeong-daero, Giheung-gu,<br>
+            Yongin-si, Gyeonggi-do, Republic of Korea</p>
+          </div>
+        </div>
+
+      </div>
+      <p style="font-size: 0.7rem; color: #aaa; text-align: center; margin-top: 2rem;">
+        Website designed by Junyong Lee · With assistance from ChatGPT (OpenAI)
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.arc-tab');
+    const panels = document.querySelectorAll('.arc-panel');
+
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+
+        tabs.forEach(t => {
+          t.classList.toggle('is-active', t === btn);
+          t.setAttribute('aria-selected', t === btn ? 'true' : 'false');
+        });
+
+        panels.forEach(p => {
+          const on = p.dataset.panel === target;
+          p.classList.toggle('is-active', on);
+          p.hidden = !on;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
