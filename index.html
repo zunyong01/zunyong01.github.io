@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Main</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junyong Lee — CV</title>
+  <meta name="description" content="Junyong Lee — curriculum vitae. Technology & Data Intelligence Lab, Kyung Hee University." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%8B%3C/text%3E%3C/svg%3E" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNMRRFLGW7"></script>
   <script>
@@ -13,156 +15,458 @@
     gtag('config', 'G-VNMRRFLGW7');
   </script>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-
   <div class="container">
 
-    <header>
-        <h1>
-          <a href="index.html" style="text-decoration: none; color: inherit;">
-            <code style="background-color: black; padding: 0.3em 0.6em; border-radius: 4px; display: inline-block;">
-              <span style="color: #f92672;">import</span> 
-              <span style="color: #a6e22e ;">junyong</span> 
-              <span style="color: #f92672;">as</span> 
-              <span style="color: #e6db74;">my</span>
-            </code>
-          </a>
-        </h1>
+    <header class="site-header">
+      <a href="index.html" class="brand">Junyong Lee</a>
       <nav class="nav-links">
-        <a href="academic.html">my.journey</a>
-        <a href="archive.html">my.archive</a>
+        <a href="index.html" class="is-active">CV</a>
+        <a href="archive.html">Photos</a>
       </nav>
     </header>
 
-    <section class="main">
-      <div class="main-text">
-        <h2>👋 Welcome!</h2>
-        <p><strong>I am Junyong Lee,</strong> and I want to be a generalist in reading data</p>
-
-        <h3 style="margin-top: 2rem;"># <code>I’m Interested in</code></h3>
-        <ul>
-          <li><strong>Data-driven decision making</strong></li><br>
-          <li>R&D Strategy Roadmapping<br>(patent, account, finance, ESG report)</li>
-          <li>Technology Management</li>
-          <li>Technology Forecasting</li>
-          <li>Technology Opportunity</li>
-          <li>Discrete Choice Experiment</li>
-          <li>Contingent Valuation</li>
-        </ul>
-
-
-        <p style="margin-top: 3rem;">
-          ⚽ I enjoy watching football matches,especially those of <br> 
-          <span style="
-            background: repeating-linear-gradient(to right, #005bac, #005bac 10px, #000000 10px, #000000 20px);
-            color: white;
-            padding: 0.1em 0.3em;
-            font-weight: bold;
-          ">Incheon United</span> and 
-          <span style="
-            background-color: #db0007;
-            color: white;
-            padding: 0.1em 0.3em;
-            font-weight: bold;
-          ">Arsenal FC</span><br><br><u>let's talk about research and football!🤓</u>
-        </p>
-
-      </div>
-
-      <div class="main-img">
-        <div class="image-slider">
-          <button class="slide-btn prev">&#10094;</button>
-
-        <div class="slides">
-          <img src="main.jpeg" alt="profile 1" />
-          <img src="main2.jpeg" alt="profile 2" />
+    <!-- ===== Hero ===== -->
+    <section class="cv-hero">
+      <div class="cv-photo"><img src="main.jpeg" alt="Junyong Lee" /></div>
+      <div class="cv-id">
+        <h1>Junyong Lee</h1>
+        <p class="cv-tagline">I want to be a generalist in reading data.</p>
+        <div class="cv-contact">
+          <a href="mailto:gunnercoyg@khu.ac.kr">gunnercoyg@khu.ac.kr</a>
+          <span>·</span>
+          <a href="https://github.com/zunyong01" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="https://tdilab.khu.ac.kr/" target="_blank" rel="noopener">T&amp;DI Lab</a>
         </div>
-
-        <button class="slide-btn next">&#10095;</button>
       </div>
-</div>
     </section>
 
-<footer>
-  <div class="footer-wrapper">
-    
-    <!-- 왼쪽: 연락처 및 소셜 -->
-    <div class="footer-left">
-      <div class="contact">
-        <strong>Contact here</strong><br>
-        <a href="mailto:gunnercoyg@khu.ac.kr">gunnercoyg@khu.ac.kr</a><br>
-        <a href="https://tdilab.khu.ac.kr/">T&DI Lab at KyungHee University</a>
-      </div>
+    <!-- ===== Research interests ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Research Interests</h2>
+      <p class="cv-prose">
+        Data-driven decision making<span class="sep">·</span>R&amp;D strategy
+        roadmapping (patent, finance, ESG)<span class="sep">·</span>technology
+        management, forecasting &amp; opportunity discovery<span class="sep">·</span>discrete
+        choice experiment<span class="sep">·</span>contingent valuation
+      </p>
+      <p class="personal-note">
+        ⚽ Off the clock, I watch football —
+        <span class="tag-team">Incheon United</span> and
+        <span class="tag-team">Arsenal FC</span>.
+      </p>
+    </section>
 
-      <div class="social" style="margin-top: 1rem;">
-        <strong>Follow Me</strong><br>
-        <a href="https://github.com/zunyong01" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a><br>
-        <a href="https://www.instagram.com/jnynguo" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-      </div>
-    </div>
+    <!-- ===== Education ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Education</h2>
+      <div class="cv-list">
 
-    <!-- 오른쪽: 지도 + 주소 -->
-    <div class="footer-right">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2381024387395!2d127.07824237644646!3d37.2464023719996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44df25a102c3%3A0x22dcda61fb710fef!2z6rK96riw64-EIOygnOq1rCDslYTrjIDrrLjroZwg6rK96riw64-EIOq1rOyCsOuemOybkCDspJHrj4Trs7jsnpAg6rSA7Yq47J247Yq567mE!5e0!3m2!1sko!2skr!4v1719226314277!5m2!1sko!2skr"
-        width="260"
-        height="160"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+        <div class="cv-row">
+          <div class="cv-when">2026 –</div>
+          <div class="cv-body">
+            <div class="cv-title">M.S. Program, Kyung Hee University</div>
+            <div class="cv-sub">
+              Multidisciplinary Graduate School for Carbon Neutrality,
+              Consulting, and Conflict Management
+            </div>
+          </div>
+        </div>
 
-      <div class="address-block">
-        <p>Room 361 @ Engineering Building,<br>
-        Kyung Hee University Global Campus</p>
-        <p>1732, Deogyeong-daero, Giheung-gu,<br>
-        Yongin-si, Gyeonggi-do, Republic of Korea</p>
+        <div class="cv-row">
+          <div class="cv-when">2020 – 26</div>
+          <div class="cv-body">
+            <div class="cv-title">B.E., Kyung Hee University</div>
+            <div class="cv-sub">
+              Industrial &amp; Management Systems Engineering, with a
+              double major in Software Convergence
+            </div>
+            <div class="cv-note">
+              Mandatory military service, Republic of Korea Army (2021–2023)
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Experience</h2>
+      <div class="cv-list">
+        <div class="cv-row">
+          <div class="cv-when">2023 –</div>
+          <div class="cv-body">
+            <div class="cv-title">Undergraduate Research Assistant</div>
+            <div class="cv-sub">
+              Technology &amp; Data Intelligence Lab, Kyung Hee University
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Publications</h2>
+      <ol class="cv-publist">
+        <li>
+          <span class="me">이준용</span>, 문희석, &amp; 최현홍. (2026). 구조적 토픽 모형과 생성형
+          지형 매핑을 활용한 점진적 혁신 기회 식별 연구: 무인항공기 산업을 중심으로
+          [A study on identifying incremental innovation opportunities using
+          structural topic modeling and generative topographic mapping:
+          Focusing on the unmanned aerial vehicle industry].
+          <em>한국혁신학회지, 21</em>(3), 159–196.
+          <a href="https://doi.org/10.46251/INNOS.2026.8.21.3.159" target="_blank" rel="noopener">https://doi.org/10.46251/INNOS.2026.8.21.3.159</a>
+        </li>
+        <li>
+          문희석, <span class="me">이준용</span>, &amp; 최현홍. (2026). 특허 기반 수소 저장·유통
+          기술의 기술개발 지형과 기업 경쟁구도 분석: 구조적 토픽모형을 중심으로
+          [Patent-based analysis of the technology development landscape and
+          corporate competitive landscape in hydrogen storage and distribution:
+          A structural topic modeling approach].
+          <em>한국혁신학회지, 21</em>(3), 115–157.
+          <a href="https://doi.org/10.46251/INNOS.2026.8.21.3.115" target="_blank" rel="noopener">https://doi.org/10.46251/INNOS.2026.8.21.3.115</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Conference presentations ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Conference Presentations</h2>
+      <div class="cv-list">
+
+        <div class="cv-row">
+          <div class="cv-when">2026.06</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              구조적 토픽 모형과 GTM 지도를 사용한 메모리 반도체 산업의 부상 기술 및 공백 기술
+              식별을 통한 특허 전략 수립 방법론 제안
+              <span class="en">A systematic STM–GTM framework for technological
+                opportunity prioritization based on emergence score</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡, 최현홍</div>
+            <div class="cv-meta">
+              2026 대한산업공학회 춘계학술대회, 경주화백컨벤션센터
+              <span class="badge badge--oral">Oral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.12</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              그래프신경망을 이용한 기술 융합 패턴 식별과 연결 관계 예측
+              <span class="en">Identifying Technology Convergence Patterns and
+                Predicting Linkages Using Graph Neural Networks</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡, 이원희</div>
+            <div class="cv-meta">
+              2025 한국소프트웨어종합학술대회, 여수엑스포컨벤션센터
+              <span class="badge badge--poster">Poster</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.11</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              코로나19는 미디어 사용 패턴을 변화시켰는가?
+              <span class="en">Did COVID-19 Change Media Usage Patterns? A Media
+                Diary Analysis Using Structural Topic Modeling and Regression
+                Discontinuity Design</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡</div>
+            <div class="cv-meta">제13회 한국미디어패널학술대회, 서울 양재</div>
+            <div class="cv-links">
+              <a href="https://stat.kisdi.re.kr/kor/board/BoardList.html?rootId=2010005&menuId=2010117&board_class=BOARD15&board_seq=3398&pub_chk=BOARD&cont_class=PBL0006&cont_date=2025&report_div=E" target="_blank" rel="noopener">📄 Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.10</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              Technology Opportunity Discovery for Incremental Innovation:
+              A Hybrid Framework Using STM and GTM
+            </div>
+            <div class="cv-authors"><span class="me">Junyong Lee</span>‡, Hyunhong Choi</div>
+            <div class="cv-meta">
+              INFORMS Annual Meeting 2025, Atlanta, GA, United States
+              <span class="badge badge--oral">Oral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.07</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              점진적 혁신을 위한 기술 기회 발굴 연구
+              <span class="en">Technology Opportunity Discovery for Incremental
+                Innovation: A Hybrid Framework Using STM and GTM</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡, 최현홍</div>
+            <div class="cv-meta">
+              2025 기술경영경제학회 하계학술대회, 제주 매종글래드호텔
+              <span class="badge badge--oral">Oral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.05</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              점진적 혁신을 위한 기술 기회 발굴 연구
+              <span class="en">Technology Opportunity Discovery for Incremental
+                Innovation: A Hybrid Framework Using STM and GTM</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡, 최현홍</div>
+            <div class="cv-meta">
+              2025 한국혁신학회 춘계학술대회, 서울대학교
+              <span class="badge badge--oral">Oral</span>
+              <span class="badge badge--award">Best Paper</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2024.11</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              구조적 토픽 모형과 GTM을 사용한 도시항공교통 분야 유망기술 제안
+              <span class="en">Identifying Promising Technologies in Urban Air
+                Mobility Using Structural Topic Modeling and Generative
+                Topographic Mapping</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡, 최현홍</div>
+            <div class="cv-meta">
+              2024 한국혁신학회 추계학술대회, 충남대학교
+              <span class="badge badge--oral">Oral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2024.07</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              특허 데이터를 활용한 해수 담수화 기술 분야의 동향 분석과 기술 발전 전략 제시
+              <span class="en">Trend Analysis and Technology Development
+                Strategies for Seawater Desalination Using Patent Data</span>
+            </div>
+            <div class="cv-authors"><span class="me">이준용</span>‡, 최현홍</div>
+            <div class="cv-meta">
+              2024 기술경영경제학회 하계학술대회, 제주 라마다호텔
+              <span class="badge badge--oral">Oral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2023.11</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              통계적 데이터 분석 기반의 한국인의 금융 및 복지 관련 특성의 발견 — 가계금융복지조사를 바탕으로
+              <span class="en">Statistical Data Analysis-Based Discovery of
+                Financial and Welfare Characteristics of Koreans</span>
+            </div>
+            <div class="cv-authors">최인수‡, 정유진, 김도윤, <span class="me">이준용</span>, 정용수, 김우창</div>
+            <div class="cv-meta">
+              2023 한국산업경영시스템학회 추계학술대회
+              <span class="badge badge--poster">Poster</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2023.11</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              Tracking Changes in Financial Literacy: Insights from the Korean
+              National Survey (2014–2022)
+            </div>
+            <div class="cv-authors">최인수‡, 정유진, 김도윤, <span class="me">이준용</span>, 정용수, 김우창</div>
+            <div class="cv-meta">
+              2023 대한산업공학회 추계학술대회
+              <span class="badge badge--poster">Poster</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="footnote">‡ presenting author</p>
+    </section>
+
+    <!-- ===== Awards ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Awards &amp; Honors</h2>
+      <div class="cv-list">
+
+        <div class="cv-row">
+          <div class="cv-when">2026.03</div>
+          <div class="cv-body">
+            <div class="cv-title">Outstanding Undergraduate Achievement Scholarship</div>
+            <div class="cv-sub">경희대학교 학부 우수졸업생 장학 · Kyung Hee University</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.11</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              Best Paper Award (Graduate Student), 13th Korean Media Panel Conference
+              <span class="badge badge--award">Best Paper</span>
+            </div>
+            <div class="cv-sub">대학원생 부문 우수논문상 · Korea Information Society Development Institute (KISDI)</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.11</div>
+          <div class="cv-body">
+            <div class="cv-title">President's Award (KIPA), 2025 Campus Patent Universiade</div>
+            <div class="cv-sub">한국발명진흥회장상 · Korea Invention Promotion Association</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2025.05</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              Best Paper Award, 2025 Spring Conference of the Korean Society of Innovation
+              <span class="badge badge--award">Best Paper</span>
+            </div>
+            <div class="cv-sub">우수논문상 · Korean Society of Innovation (with SNU TEMEP)</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2024.11</div>
+          <div class="cv-body">
+            <div class="cv-title">Minister's Award (MOTIE), 2024 Campus Patent Universiade</div>
+            <div class="cv-sub">산업통상자원부장관상 · Korean Intellectual Property Office</div>
+            <div class="cv-links">
+              <a href="https://news.khu.ac.kr/kor/user/bbs/BMSR00044/view.do?menuNo=200218&boardId=eyJjdCI6InREOWtJUnNiUnNjNmZqUytLNU5tSmc9PSIsIml2IjoiNWZiZDVkYzkxOTQ0MjA4ZTg5ZDE3MGY2NzVhNzRkOTAiLCJzIjoiYjM5NzJiZDg5ODA4NmZmYyJ9" target="_blank" rel="noopener">🔗 Related link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2024.09</div>
+          <div class="cv-body">
+            <div class="cv-title">Exemplary Student Scholarship</div>
+            <div class="cv-sub">학과 모범장학 · KHU, Dept. of Industrial &amp; Management Systems Engineering</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2024.08</div>
+          <div class="cv-body">
+            <div class="cv-title">Excellence Award, Advanced Independent Study Program</div>
+            <div class="cv-sub">우수상 · Kyung Hee University</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2024.03</div>
+          <div class="cv-body">
+            <div class="cv-title">Exemplary Student Scholarship</div>
+            <div class="cv-sub">학과 모범장학 · KHU, Dept. of Industrial &amp; Management Systems Engineering</div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2023.09</div>
+          <div class="cv-body">
+            <div class="cv-title">Encouragement Award, Career &amp; Entrepreneurship Enhancement Program</div>
+            <div class="cv-sub">장려상 · Kyung Hee University</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="cv-section">
+      <h2 class="cv-section__label">Research Projects</h2>
+      <div class="cv-list">
+
+        <div class="cv-row">
+          <div class="cv-when">2025 – 27</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              탄소중립기술의 온실가스 저감 잠재량 평가 플랫폼 기술개발 (반도체·디스플레이 산업)
+              <span class="en">Platform Technology for Evaluating the Greenhouse
+                Gas Reduction Potential of Carbon-Neutral Technologies in the
+                Semiconductor and Display Industry</span>
+            </div>
+            <div class="cv-sub">
+              Ministry of Environment · Korea Institute of Energy Research ·
+              participating researcher (co-research institution)
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-when">2023 – 25</div>
+          <div class="cv-body">
+            <div class="cv-title">
+              해수담수화 활성화를 위한 제도 및 정책방향 연구
+              <span class="en">Institutional and Policy Directions for the
+                Activation of Seawater Desalination</span>
+            </div>
+            <div class="cv-sub">
+              K-water · Korea Environment Institute · participating researcher
+              (co-research institution)
+            </div>
+            <div class="cv-links">
+              <a href="https://www.waterjournal.co.kr/news/articleView.html?idxno=76772" target="_blank" rel="noopener">🔗 Related link</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <div class="footer-col">
+            <strong>Contact</strong>
+            <a href="mailto:gunnercoyg@khu.ac.kr">gunnercoyg@khu.ac.kr</a><br>
+            <a href="https://tdilab.khu.ac.kr/" target="_blank" rel="noopener">T&amp;DI Lab at Kyung Hee University</a>
+          </div>
+          <div class="footer-col footer-links">
+            <strong>Follow</strong>
+            <a href="https://github.com/zunyong01" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a><br>
+            <a href="https://www.instagram.com/zunyonglee" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2381024387395!2d127.07824237644646!3d37.2464023719996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44df25a102c3%3A0x22dcda61fb710fef!2z6rK96riw64-EIOygnOq1rCDslYTrjIDrrLjroZwg6rK96riw64-EIOq1rOyCsOuemOybkCDspJHrj4Trs7jsnpAg6rSA7Yq47J247Yq567mE!5e0!3m2!1sko!2skr!4v1719226314277!5m2!1sko!2skr"
+            width="260" height="150"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="address">
+            <p>Room 361, Engineering Building,<br>Kyung Hee University Global Campus</p>
+            <p>1732, Deogyeong-daero, Giheung-gu,<br>Yongin-si, Gyeonggi-do, Republic of Korea</p>
+          </div>
+        </div>
+      </div>
+      <p class="colophon">Website designed by Junyong Lee</p>
+    </footer>
 
   </div>
-  <p style="font-size: .7rem; color: #aaa; text-align: center; margin-top: 2rem;">
-    Website designed by Junyong Lee · With assistance from ChatGPT (OpenAI)
-  </p>
-</footer>
-
-  </div>
-
-
-<script>
-  const slider = document.querySelector('.image-slider');
-  const slides = document.querySelector('.slides');
-  const images = document.querySelectorAll('.slides img');
-  const prevBtn = document.querySelector('.slide-btn.prev');
-  const nextBtn = document.querySelector('.slide-btn.next');
-
-  let index = 0;
-
-  function slideWidth() {
-    return slider.clientWidth; // 현재 화면에서 실제 슬라이더 폭
-  }
-
-  function showSlide(i) {
-    index = (i + images.length) % images.length;
-    slides.style.transform = `translateX(${-slideWidth() * index}px)`;
-  }
-
-  nextBtn.addEventListener('click', () => showSlide(index + 1));
-  prevBtn.addEventListener('click', () => showSlide(index - 1));
-
-  // 화면 리사이즈 시에도 끊김 방지
-  window.addEventListener('resize', () => showSlide(index));
-
-  // 초기 정렬
-  showSlide(0);
-</script>
-  
 </body>
 </html>
