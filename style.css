@@ -17,6 +17,8 @@
   --c-oral:   #b23b3b;
   --c-poster: #5f6672;
   --c-award:  #a9812a;
+  --c-wp:     #3b6ea5;
+  --c-review: #4a8a5c;
 
   --radius:    10px;
   --radius-sm: 6px;
@@ -44,6 +46,8 @@
     --c-oral:   #d98686;
     --c-poster: #a0a4ad;
     --c-award:  #d0b45e;
+    --c-wp:     #7ba3d6;
+    --c-review: #7fbf94;
   }
 }
 
@@ -296,6 +300,8 @@ img { max-width: 100%; height: auto; display: block; }
 .badge--oral   { color: var(--c-oral); }
 .badge--poster { color: var(--c-poster); }
 .badge--award  { color: var(--c-award); }
+.badge--wp     { color: var(--c-wp); }
+.badge--review { color: var(--c-review); }
 
 .footnote {
   margin-top: 1rem;
